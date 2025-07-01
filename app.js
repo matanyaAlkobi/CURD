@@ -1,4 +1,6 @@
 import readLine from 'readline';
+import readFromFile from "./read.js";
+import createObject from "./create.js"
 
 
 const rl = readLine.createInterface({
@@ -21,9 +23,10 @@ const rl = readLine.createInterface({
 
     switch(answer.toLocaleLowerCase()){
         case 'a':
-
+        readFromFile()
             break;
         case 'b':
+            createObject()
             break;
         case  'c':
             break;
